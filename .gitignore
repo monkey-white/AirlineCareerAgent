@@ -1,0 +1,25 @@
+# Python virtual environment
+.venv/
+
+# PyCharm project settings
+.idea/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables / secrets
+.env
+
+# Playwright/browser artifacts
+test-results/
+playwright-report/
+blob-report/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
