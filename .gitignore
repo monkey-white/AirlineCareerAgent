@@ -1,30 +1,55 @@
-# Python virtual environment
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Python virtual environments
 .venv/
+venv/
+env/
+ENV/
 
-# PyCharm project settings
-.idea/
-
-# Python cache files
+# Python cache and build files
 __pycache__/
 *.py[cod]
 *$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
 
-# Environment variables / secrets
-.env
-
-# Playwright/browser artifacts
-test-results/
+# Playwright browser/runtime artifacts
 playwright-report/
-blob-report/
+test-results/
+downloads/
+videos/
+traces/
 
-# Logs
+# Local data and generated outputs
+data/
+output/
+outputs/
+reports/
+logs/
 *.log
 
-# OS files
+# Local databases and temporary files
+*.db
+*.sqlite
+*.sqlite3
+*.tmp
+*.bak
+
+# IDE/editor files
+.idea/
+.vscode/
+*.iml
+
+# OS/system files
 .DS_Store
 Thumbs.db
-# Local data and generated outputs
-data/*
-!data/.gitkeep
-outputs/*
-!outputs/.gitkeep
+desktop.ini
