@@ -30,12 +30,16 @@ videos/
 traces/
 
 # Local data and generated outputs
-data/
+data/*
+outputs/*
 output/
-outputs/
 reports/
 logs/
 *.log
+
+# Keep empty project folders tracked
+!data/.gitkeep
+!outputs/.gitkeep
 
 # Local databases and temporary files
 *.db
