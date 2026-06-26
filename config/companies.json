@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Accelya",
+    "career_url": "https://w3.accelya.com/careers/",
+    "category": "airline_technology",
+    "notes": "Former employer domain alignment"
+  },
+  {
+    "name": "Sabre",
+    "career_url": "https://www.sabre.com/careers/",
+    "category": "travel_technology",
+    "notes": "Airline, agency, and travel distribution technology"
+  },
+  {
+    "name": "Amadeus",
+    "career_url": "https://amadeus.com/en/careers",
+    "category": "travel_technology",
+    "notes": "Airline, travel, distribution, and hospitality technology"
+  },
+  {
+    "name": "Travelport",
+    "career_url": "https://www.travelport.com/company/careers",
+    "category": "travel_technology",
+    "notes": "Travel commerce and distribution technology"
+  },
+  {
+    "name": "PROS",
+    "career_url": "https://pros.com/careers/",
+    "category": "revenue_management",
+    "notes": "Pricing, revenue management, and airline commerce technology"
+  },
+  {
+    "name": "SITA",
+    "career_url": "https://www.sita.aero/careers/",
+    "category": "air_transport_technology",
+    "notes": "Air transport communications and technology"
+  },
+  {
+    "name": "Navitaire",
+    "career_url": "https://amadeus.com/en/careers",
+    "category": "airline_technology",
+    "notes": "Airline retailing and reservation systems; careers handled through Amadeus"
+  },
+  {
+    "name": "IBS Software",
+    "career_url": "https://www.ibsplc.com/careers/",
+    "category": "travel_technology",
+    "notes": "Airline, cargo, hospitality, and travel technology"
+  },
+  {
+    "name": "ATPCO",
+    "career_url": "https://www.atpco.net/careers",
+    "category": "airline_pricing",
+    "notes": "Airline pricing, fares, and retailing data"
+  },
+  {
+    "name": "OAG",
+    "career_url": "https://www.oag.com/careers",
+    "category": "aviation_data",
+    "notes": "Flight schedules, aviation data, and travel analytics"
+  }
+]

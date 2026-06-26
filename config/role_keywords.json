@@ -1,0 +1,56 @@
+{
+  "role_keywords": [
+    "QA Automation",
+    "Automation Engineer",
+    "Software QA Engineer",
+    "Quality Assurance Engineer",
+    "Test Automation Engineer",
+    "SDET",
+    "QA Analyst",
+    "Business Analyst",
+    "Systems Analyst",
+    "Implementation Analyst",
+    "Product Analyst",
+    "Support Analyst",
+    "Application Support Analyst"
+  ],
+  "domain_keywords": [
+    "airline",
+    "aviation",
+    "travel",
+    "fare",
+    "fares",
+    "pricing",
+    "ticketing",
+    "reservation",
+    "booking",
+    "GDS",
+    "NDC",
+    "IATA",
+    "ATPCO",
+    "revenue management",
+    "distribution",
+    "retailing",
+    "offer management",
+    "order management",
+    "passenger service system",
+    "PSS"
+  ],
+  "early_mvp_filters": {
+    "locations": [
+      "Remote",
+      "United States",
+      "Miami",
+      "Fort Lauderdale"
+    ],
+    "employment_types": [
+      "Full-time",
+      "Contract"
+    ],
+    "seniority_levels": [
+      "Associate",
+      "Mid-level",
+      "Senior"
+    ]
+  }
+}
