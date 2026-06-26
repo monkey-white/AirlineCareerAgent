@@ -144,3 +144,21 @@ Use `.env.example` for safe configuration examples only.
 5. Define role and domain keyword filters
 6. Add the first controlled career-page check
 7. Save matched job results locally
+
+## CLI Usage
+
+AirlineCareerAgent includes a simple CLI entry point that loads the local configuration files and prints a summary.
+
+Run from the project root:
+
+```powershell
+python -m src.cli
+```
+
+The CLI displays:
+
+* number of configured companies
+* company names
+* number of role keywords
+* number of domain keywords
+* early MVP filters
