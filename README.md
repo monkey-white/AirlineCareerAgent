@@ -110,16 +110,96 @@ Then edit `.env` locally.
 
 ## Git Workflow
 
-Recommended feature-branch workflow:
+This project uses a feature-branch workflow.
 
-```bash
+Avoid committing directly to `main` unless it is a very small maintenance change.
+
+Recommended workflow before starting new work:
+
+## Git Workflow
+
+This project uses a feature-branch workflow.
+
+Avoid committing directly to `main` for normal development work. Instead, create a feature branch, push it to GitHub, and open a Pull Request.
+
+### Start a new feature branch
+
+Run these commands from the project root:
+
+```powershell
 git checkout main
 git pull origin main
-git checkout -b feature/readme-env-example
+git checkout -b feature/descriptive-branch-name
+```
+
+Example:
+
+```powershell
+git checkout -b feature/workday-collector
+```
+
+### Check changes before committing
+
+```powershell
 git status
-git add README.md .env.example
-git commit -m "Add initial README and env example"
-git push origin feature/readme-env-example
+```
+
+Make sure private files such as `.env` are not staged.
+
+### Run tests
+
+```powershell
+pytest
+```
+
+### Commit changes
+
+Stage only the files that should be included:
+
+```powershell
+git add README.md
+```
+
+Or stage a specific source file:
+
+```powershell
+git add src/collectors/playwright_collector.py
+```
+
+Then commit:
+
+```powershell
+git commit -m "Describe the change clearly"
+```
+
+### Push the feature branch
+
+```powershell
+git push origin feature/descriptive-branch-name
+```
+
+After pushing, open a Pull Request on GitHub.
+
+### Pull Request description template
+
+Use this template for Pull Request descriptions:
+
+```markdown
+## Summary
+
+- Added/changed ...
+- Added/changed ...
+
+## Testing
+
+- Ran `pytest`
+- Ran manual command if applicable: `python run_collector_test.py`
+
+## Notes
+
+- No secrets or private files were committed.
+- This change does not auto-apply to jobs.
+- Follow-up work: ...
 ```
 
 ## Security Notes
