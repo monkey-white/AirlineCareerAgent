@@ -9,8 +9,8 @@ def main() -> None:
     domain_keywords = role_keywords_config.get("domain_keywords", [])
     early_mvp_filters = role_keywords_config.get("early_mvp_filters", [])
 
-    print("AirlineCareerAgent Config Summary")
-    print("=" * 38)
+    print("Targeted Job Search Agent Config Summary")
+    print("=" * 42)
 
     print(f"Companies loaded: {len(companies)}")
     print("Company names:")
