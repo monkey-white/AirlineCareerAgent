@@ -1,24 +1,27 @@
-# AirlineCareerAgent
+# Targeted Job Search Agent
 
-AirlineCareerAgent is a Python-based automation project designed to identify relevant job openings across airline, aviation technology, and travel software companies.
+Targeted Job Search Agent is a configurable Python-based automation project designed to identify relevant job openings from selected company career pages.
 
-The project focuses on collecting career opportunities from selected company websites, filtering them by role and domain relevance, and organizing the results for review.
+The project focuses on collecting career opportunities, filtering them by role and domain relevance, scoring potential matches, and organizing results for review.
+
+The initial profile focuses on QA automation, software testing, analyst, airline, aviation technology, and travel software roles. The long-term goal is to support additional search profiles such as finance QA, healthcare QA, general SDET roles, and other targeted career searches.
 
 ## Project Goal
 
-The goal of AirlineCareerAgent is to demonstrate practical automation, job-search workflow design, and applied agentic AI concepts in a real-world career search use case.
+The goal of Targeted Job Search Agent is to demonstrate practical automation, job-search workflow design, and applied agentic AI concepts in a real-world career search use case.
 
 The system is intended to:
 
-* Search selected airline and travel-tech company career pages
-* Identify relevant QA, automation, software testing, and technology roles
+* Search selected company career pages
+* Identify relevant QA, automation, software testing, analyst, and technology roles
 * Filter jobs using role-specific and domain-specific keywords
 * Store job results in a structured format
-* Provide a foundation for future AI-assisted job matching and reporting
+* Generate user-friendly reports for manual review and application decisions
+* Provide a foundation for future AI-assisted job matching and application tracking
 
 ## Current Scope
 
-This repository is currently in the initial setup phase.
+This repository is currently in the early MVP phase.
 
 Current focus:
 
@@ -27,6 +30,9 @@ Current focus:
 * Git and GitHub workflow
 * Environment variable setup
 * Initial documentation
+* Career page link collection
+* Keyword-based scoring
+* CSV result export
 
 ## MVP Scope
 
@@ -70,21 +76,23 @@ Potential future additions:
 
 ## Suggested Project Structure
 
-```text
-AirlineCareerAgent/
-├── README.md
-├── .env.example
-├── .gitignore
-├── requirements.txt
-├── src/
-│   └── main.py
-├── data/
-│   └── .gitkeep
-├── tests/
-│   └── .gitkeep
-└── docs/
-    └── notes.md
-```
+The project is organized as follows:
+
+- `README.md` - project overview and usage notes
+- `.env.example` - safe template for local environment variables
+- `.gitignore` - files and folders excluded from Git
+- `requirements.txt` - Python dependencies
+- `config/` - company and keyword configuration files
+- `src/` - application source code
+  - `main.py` - MVP pipeline entry point
+  - `cli.py` - configuration summary CLI
+  - `config_loader.py` - configuration loading helpers
+  - `collectors/` - career page collectors
+  - `scoring/` - job scoring logic
+  - `output/` - CSV and future report writers
+- `data/` - local data files, kept out of Git except `.gitkeep`
+- `outputs/` - generated reports, kept out of Git except `.gitkeep`
+- `tests/` - automated tests
 
 ## Environment Variables
 
@@ -107,14 +115,6 @@ Copy-Item .env.example .env
 ```
 
 Then edit `.env` locally.
-
-## Git Workflow
-
-This project uses a feature-branch workflow.
-
-Avoid committing directly to `main` unless it is a very small maintenance change.
-
-Recommended workflow before starting new work:
 
 ## Git Workflow
 
@@ -217,17 +217,17 @@ Use `.env.example` for safe configuration examples only.
 
 ## Planned Next Steps
 
-1. Add `.gitignore`
-2. Add `requirements.txt`
-3. Create the initial `src/main.py`
-4. Define the target company list
-5. Define role and domain keyword filters
-6. Add the first controlled career-page check
-7. Save matched job results locally
+1. Add HTML report generation for reviewed job results
+2. Open the HTML report automatically at the end of a run
+3. Add company-level collection status tracking
+4. Include failed or no-result companies in the report
+5. Improve job-link filtering to reduce noisy results
+6. Add profile-based configuration for different job searches
+7. Add persistent application tracking for statuses, notes, and resume versions
 
 ## CLI Usage
 
-AirlineCareerAgent includes a simple CLI entry point that loads the local configuration files and prints a summary.
+Targeted Job Search Agent includes a simple CLI entry point that loads the local configuration files and prints a summary.
 
 Run from the project root:
 
