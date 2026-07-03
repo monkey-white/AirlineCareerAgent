@@ -32,7 +32,7 @@ traces/
 # Local data and generated outputs
 data/*
 outputs/*
-output/
+/output/
 reports/
 logs/
 *.log
